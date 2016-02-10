@@ -1,0 +1,26 @@
+{
+  "strict":true,
+  "noempty":true,
+  "noarg":true,
+  "eqeqeq":true,
+  "browser":true,
+  "devel":true,
+  "bitwise":true,
+  "curly":true,
+  "undef":true,
+  "nonew":true,
+  "forin":true,
+
+  "predef": [
+    "CKEDITOR",
+    "assert",
+    "arrayAssert",
+    "bender",
+    "JSON",
+    "objectAssert",
+    "resume",
+    "sinon",
+    "wait",
+    "YUITest"
+  ]
+}
