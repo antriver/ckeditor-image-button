@@ -101,20 +101,21 @@
             var html = '<p class="cke-image-button-loader" id="cke-image-button-tmp-' + batch + '-' + i + '"><img src="' + pluginPath + 'icons/loading.gif" /></p>';
             var element = CKEDITOR.dom.element.createFromHtml(html);
             this.editor.insertElement(element);
-	    this.editor.fire( 'change' );
+            this.editor.fire('change');
+
             return element;
         },
 
         removeLoadingImage: function (batch, i) {
             this.editor.editable().findOne('#cke-image-button-tmp-' + batch + '-' + i).remove();
-	    this.editor.fire( 'change' );
+            this.editor.fire('change');
         },
 
         insertImage: function (url) {
             var html = '<p><img src="' + url + '" class="cke-image-button-image" /></p>';
             var element = CKEDITOR.dom.element.createFromHtml(html);
             this.editor.insertElement(element);
-	    this.editor.fire( 'change' );
+            this.editor.fire('change');
 
             return element;
         },
@@ -126,7 +127,7 @@
             var loader = this.editor.editable().findOne('#cke-image-button-tmp-' + batch + '-' + i);
 
             image.replace(loader);
-	    this.editor.fire( 'change' );
+            this.editor.fire('change');
 
             return image;
         },
